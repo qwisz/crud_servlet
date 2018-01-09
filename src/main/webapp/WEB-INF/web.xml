@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Servlets Tutorial</display-name>
+
+    <servlet>
+        <servlet-name>ManufactureView</servlet-name>
+        <servlet-class>com.andersen.view.ManufactureView</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductView</servlet-name>
+        <servlet-class>com.andersen.view.ProductView</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ManufactureAdd</servlet-name>
+        <servlet-class>com.andersen.view.ManufactureAdd</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ManufactureView</servlet-name>
+        <url-pattern>/manufactures</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductView</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManufactureAdd</servlet-name>
+        <url-pattern>/manufactures/add</url-pattern>
+    </servlet-mapping>
+</web-app>
